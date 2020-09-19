@@ -14,25 +14,10 @@ namespace _10._Rage_Expenses
 
             double totalPrice = 0;
 
-            for (int i = 1; i <= lostGames; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    totalPrice += priceHeadSet;
-                }
-                if (i % 3 == 0)
-                {
-                    totalPrice += priceMouse;
-                }
-                if (i % 6 == 0)
-                {
-                    totalPrice += priceKeyboard;
-                }
-                if (i % 12 == 0)
-                {
-                    totalPrice += priceDisplay;
-                }
-            }
+            totalPrice += lostGames / 2 * priceHeadSet;
+            totalPrice += lostGames / 3 * priceMouse;
+            totalPrice += lostGames / 6 * priceKeyboard;
+            totalPrice += lostGames / 12 * priceDisplay;
 
             Console.WriteLine($"Rage expenses: {totalPrice:F2} lv.");
         }
