@@ -14,28 +14,23 @@ namespace _10._Rage_Expenses
 
             double totalPrice = 0;
 
-            int head = 0;
-            int mouse = 0;
-            int key = 0;
-            int disp = 0;
             for (int i = 1; i <= lostGames; i++)
             {
                 if (i % 2 == 0)
                 {
                     totalPrice += priceHeadSet;
-                    head++;
                 }
                 if (i % 3 == 0)
                 {
                     totalPrice += priceMouse;
                 }
-                if (i % 12 == 0)
-                {
-                    totalPrice += priceDisplay;
-                }
                 if (i % 6 == 0)
                 {
                     totalPrice += priceKeyboard;
+                }
+                if (i % 12 == 0)
+                {
+                    totalPrice += priceDisplay;
                 }
             }
 
