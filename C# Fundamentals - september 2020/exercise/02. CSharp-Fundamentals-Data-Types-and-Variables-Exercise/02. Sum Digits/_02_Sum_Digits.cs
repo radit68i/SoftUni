@@ -2,7 +2,7 @@
 
 namespace _02._Sum_Digits
 {
-    class Program
+    class _02_Sum_Digits
     {
         static void Main(string[] args)
         {

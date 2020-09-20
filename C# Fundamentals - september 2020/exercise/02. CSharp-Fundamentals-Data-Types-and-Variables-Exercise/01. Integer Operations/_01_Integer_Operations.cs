@@ -2,7 +2,7 @@
 
 namespace _01._Integer_Operations
 {
-    class Program
+    class _01_Integer_Operations
     {
         static void Main(string[] args)
         {
