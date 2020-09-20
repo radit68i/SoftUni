@@ -8,10 +8,10 @@ namespace _02._Sum_Digits
         {
             int num = int.Parse(Console.ReadLine());
 
-            int sumOfDigits = 0;
+            byte sumOfDigits = 0;
             while(num != 0)
             {
-                int digit = num % 10;
+                byte digit = (byte)(num % 10);
                 num /= 10;
                 sumOfDigits += digit;
             }

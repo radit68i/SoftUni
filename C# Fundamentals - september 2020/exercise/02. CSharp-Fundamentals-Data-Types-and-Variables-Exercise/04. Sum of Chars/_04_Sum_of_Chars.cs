@@ -6,13 +6,13 @@ namespace _04._Sum_of_Chars
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
+            byte n = byte.Parse(Console.ReadLine());
 
-            int sum = 0;
-            for (int i = 0; i < n; i++)
+            ushort sum = 0;
+            for (byte i = 0; i < n; i++)
             {
                 char ch = char.Parse(Console.ReadLine());
-                sum += (int)ch;
+                sum += ch;
             }
 
             Console.WriteLine($"The sum equals: {sum}");
